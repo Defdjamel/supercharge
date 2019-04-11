@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-let schemaVersion : UInt64 = 7
+let schemaVersion : UInt64 = 8
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

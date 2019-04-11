@@ -13,6 +13,7 @@ class Repository: Object {
     @objc dynamic var id =  0
     @objc dynamic var name = ""
     @objc dynamic var full_name = ""
+    @objc dynamic var detail = ""
     @objc dynamic var html_url = ""
     @objc dynamic var language : String?
     @objc dynamic var forks = 0
@@ -62,6 +63,9 @@ extension Repository {
         }
         if let full_name = object.object(forKey: "full_name") as? String {
             item.full_name =  full_name
+        }
+        if let detail = object.object(forKey: "description") as? String {
+            item.detail =  detail
         }
         if let html_url = object.object(forKey: "html_url") as? String {
             item.html_url =  html_url
