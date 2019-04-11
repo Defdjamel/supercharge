@@ -112,6 +112,10 @@ extension Repository {
 Used to populate View and Cell.
 */
 extension Repository : RepositoryInterface {
+    var detailText: String? {
+        return self.detail
+    }
+    
     var id_text: String? {
         return "ID\r\(self.id)"
     }
