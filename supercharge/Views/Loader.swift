@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
-class Loader: NSObject {
+import SVProgressHUD
+class Loader: SVProgressHUD {
 
 }
