@@ -8,9 +8,11 @@
 
 import UIKit
 
-let Hostname = "https://wzp.solutions"
-let ServiceApi = Hostname + "/tests/ios-custom-icons/"
+let Hostname = "https://api.github.com/"
+let ServiceApi = Hostname + ""
+let api_key = "df6f765c265c02c1ef978f6ee3207407cf878f4d"
+let maxCount = 20
 
 struct Api {
-    static let getIcons = ServiceApi + "IconsData.json"
+    static let searchRepositories = ServiceApi + "search/repositories"
 }

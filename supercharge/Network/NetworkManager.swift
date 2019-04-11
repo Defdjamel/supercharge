@@ -13,11 +13,18 @@ class NetworkManager: NSObject {
 }
 //MARK: - REQUESTS
 extension NetworkManager {
-    func getListIcons (success: @escaping (Array<Icon>) -> Void, failed: @escaping () -> Void){
-          Alamofire.request( Api.getIcons, method: .get ,parameters: nil ,encoding: URLEncoding.default).responseJSON { response in
-            if  let json = response.result.value  as? NSDictionary, let icons =  json.object(forKey: "icons") as? Array<NSDictionary> {//success
-                let items =  IconsManager.sharedInstance.createOrUpdateObjects(objects: icons )
+    func searchRepositories (q: String,page: Int,  success: @escaping (Array<Repository>) -> Void, failed: @escaping () -> Void){
+        let service = Api.searchRepositories + "?q=" + q
+        let params : [String: Any] = [ "page" : page, "per_page" : maxCount, "accesstoken" : api_key,"sort" : "stars" ,"order" : "desc" ]
+       
+        print(service)
+        print(params)
+          Alamofire.request( service, method: .get ,parameters: params ,encoding: URLEncoding.default).responseJSON { response in
+            
+            if  let json = response.result.value  as? NSDictionary, let items =  json.object(forKey: "items") as? Array<NSDictionary> {//success
+                let items = Repository.createOrUpdateObjects(objects: items)
                 success(items)
+                print(json)
              }else{
                 failed()
             }
