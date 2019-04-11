@@ -14,3 +14,22 @@ class Licence: Object {
     @objc dynamic var key = ""
 
 }
+
+extension Licence{
+    class func createOrUpdateObject(_ object: NSDictionary) -> Licence{
+        let item = Licence()
+        let realm = try! Realm()
+        
+        if let name = object.object(forKey: "name") as? String {
+            item.name =  name
+        }
+        if let key = object.object(forKey: "key") as? String {
+            item.key =  key
+        }
+        
+        try! realm.write {
+            realm.add(item, update: true)
+        }
+        return item
+    }
+}
