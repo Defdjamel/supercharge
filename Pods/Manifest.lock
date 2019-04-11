@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Kingfisher (4.10.1)
+  - Realm (3.14.1):
+    - Realm/Headers (= 3.14.1)
+  - Realm/Headers (3.14.1)
+  - RealmSwift (3.14.1):
+    - Realm (= 3.14.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - Kingfisher (~> 4.10.0)
+  - RealmSwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
+  RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 623bbcb95cb562957f2ae526962dc7a6fe86862f
+
+COCOAPODS: 1.5.3
