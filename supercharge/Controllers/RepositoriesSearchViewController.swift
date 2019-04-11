@@ -12,7 +12,7 @@ private let reuseIdentifier = "RepositoryTableViewCell"
 
 class RepositoriesSearchViewController: UIViewController {
     // MARK: - Variable
-    var repositories : [Repository] = []
+    private var repositories : [Repository] = []
     //var for pagination
     private var currentPage : Int = 0
     private var isLoading  = false
@@ -60,15 +60,18 @@ class RepositoriesSearchViewController: UIViewController {
         pullDataFromNetwork()
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? DetailCollectionViewController, let indexSelected = tableView.indexPathForSelectedRow{
+            vc.currentRepository = repositories[indexSelected.row]
+        }
     }
-    */
+    
 
 }
 
@@ -98,6 +101,7 @@ extension RepositoriesSearchViewController: UITableViewDataSource {
 //MARK: - UITableViewDelegate
 extension RepositoriesSearchViewController:   UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "homeToDetail", sender: self)
         
     }
     

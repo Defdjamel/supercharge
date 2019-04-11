@@ -25,6 +25,8 @@
 		1A794400225F891E0083EA0B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943FF225F891E0083EA0B /* Loader.swift */; };
 		1A794402225F8F710083EA0B /* RepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A794401225F8F710083EA0B /* RepositoryInterface.swift */; };
 		1A794404225FA01F0083EA0B /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A794403225FA01F0083EA0B /* DetailCollectionViewController.swift */; };
+		1A794407225FA3D20083EA0B /* DetailTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A794405225FA3D20083EA0B /* DetailTitleCollectionViewCell.swift */; };
+		1A794408225FA3D20083EA0B /* DetailTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A794406225FA3D20083EA0B /* DetailTitleCollectionViewCell.xib */; };
 		544361771E394F0F3A095382 /* Pods_superchargeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA458908F43EA96B46B22D90 /* Pods_superchargeTests.framework */; };
 		92533840401C0D1E809D4941 /* Pods_supercharge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D2A3A746BB8DA64294A2B /* Pods_supercharge.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		1A7943FF225F891E0083EA0B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		1A794401225F8F710083EA0B /* RepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInterface.swift; sourceTree = "<group>"; };
 		1A794403225FA01F0083EA0B /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
+		1A794405225FA3D20083EA0B /* DetailTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A794406225FA3D20083EA0B /* DetailTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C55D6F58699954F5AF6B6F6 /* Pods-superchargeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superchargeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-superchargeTests/Pods-superchargeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE1C26CEA8D7D4045C44B5C /* Pods-supercharge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supercharge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supercharge/Pods-supercharge.debug.xcconfig"; sourceTree = "<group>"; };
 		861D1C866B672247DD4229A3 /* Pods-superchargeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superchargeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-superchargeTests/Pods-superchargeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 			children = (
 				1A7943F9225F82FD0083EA0B /* RepositoryTableViewCell.swift */,
 				1A7943FA225F82FD0083EA0B /* RepositoryTableViewCell.xib */,
+				1A794405225FA3D20083EA0B /* DetailTitleCollectionViewCell.swift */,
+				1A794406225FA3D20083EA0B /* DetailTitleCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7943CD225F77E30083EA0B /* LaunchScreen.storyboard in Resources */,
+				1A794408225FA3D20083EA0B /* DetailTitleCollectionViewCell.xib in Resources */,
 				1A7943CA225F77E30083EA0B /* Assets.xcassets in Resources */,
 				1A7943C8225F77E10083EA0B /* Main.storyboard in Resources */,
 				1A7943FC225F82FD0083EA0B /* RepositoryTableViewCell.xib in Resources */,
@@ -420,6 +427,7 @@
 			files = (
 				1A7943F2225F7A2E0083EA0B /* NetworkManager.swift in Sources */,
 				1A794402225F8F710083EA0B /* RepositoryInterface.swift in Sources */,
+				1A794407225FA3D20083EA0B /* DetailTitleCollectionViewCell.swift in Sources */,
 				1A7943F8225F7FEE0083EA0B /* Licence.swift in Sources */,
 				1A7943FB225F82FD0083EA0B /* RepositoryTableViewCell.swift in Sources */,
 				1A794404225FA01F0083EA0B /* DetailCollectionViewController.swift in Sources */,
