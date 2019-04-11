@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A7943C3225F77E10083EA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943C2225F77E10083EA0B /* AppDelegate.swift */; };
-		1A7943C5225F77E10083EA0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943C4225F77E10083EA0B /* ViewController.swift */; };
 		1A7943C8225F77E10083EA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7943C6225F77E10083EA0B /* Main.storyboard */; };
 		1A7943CA225F77E30083EA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7943C9225F77E30083EA0B /* Assets.xcassets */; };
 		1A7943CD225F77E30083EA0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7943CB225F77E30083EA0B /* LaunchScreen.storyboard */; };
@@ -17,6 +16,14 @@
 		1A7943F0225F7A2E0083EA0B /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943E8225F7A2E0083EA0B /* NSObject+Extension.swift */; };
 		1A7943F1225F7A2E0083EA0B /* UIView+InstanceNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943E9225F7A2E0083EA0B /* UIView+InstanceNib.swift */; };
 		1A7943F2225F7A2E0083EA0B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943ED225F7A2E0083EA0B /* NetworkManager.swift */; };
+		1A7943F4225F7CFA0083EA0B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943F3225F7CFA0083EA0B /* Repository.swift */; };
+		1A7943F6225F7E060083EA0B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943F5225F7E060083EA0B /* User.swift */; };
+		1A7943F8225F7FEE0083EA0B /* Licence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943F7225F7FEE0083EA0B /* Licence.swift */; };
+		1A7943FB225F82FD0083EA0B /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943F9225F82FD0083EA0B /* RepositoryTableViewCell.swift */; };
+		1A7943FC225F82FD0083EA0B /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7943FA225F82FD0083EA0B /* RepositoryTableViewCell.xib */; };
+		1A7943FE225F83400083EA0B /* RepositoriesSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943FD225F83400083EA0B /* RepositoriesSearchViewController.swift */; };
+		1A794400225F891E0083EA0B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7943FF225F891E0083EA0B /* Loader.swift */; };
+		1A794402225F8F710083EA0B /* RepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A794401225F8F710083EA0B /* RepositoryInterface.swift */; };
 		544361771E394F0F3A095382 /* Pods_superchargeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA458908F43EA96B46B22D90 /* Pods_superchargeTests.framework */; };
 		92533840401C0D1E809D4941 /* Pods_supercharge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D2A3A746BB8DA64294A2B /* Pods_supercharge.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +42,6 @@
 		107D2A3A746BB8DA64294A2B /* Pods_supercharge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supercharge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7943BF225F77E10083EA0B /* supercharge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supercharge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7943C2225F77E10083EA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A7943C4225F77E10083EA0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A7943C7225F77E10083EA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A7943C9225F77E30083EA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A7943CC225F77E30083EA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		1A7943E8225F7A2E0083EA0B /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1A7943E9225F7A2E0083EA0B /* UIView+InstanceNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InstanceNib.swift"; sourceTree = "<group>"; };
 		1A7943ED225F7A2E0083EA0B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1A7943F3225F7CFA0083EA0B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1A7943F5225F7E060083EA0B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1A7943F7225F7FEE0083EA0B /* Licence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licence.swift; sourceTree = "<group>"; };
+		1A7943F9225F82FD0083EA0B /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		1A7943FA225F82FD0083EA0B /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		1A7943FD225F83400083EA0B /* RepositoriesSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesSearchViewController.swift; sourceTree = "<group>"; };
+		1A7943FF225F891E0083EA0B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		1A794401225F8F710083EA0B /* RepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInterface.swift; sourceTree = "<group>"; };
 		2C55D6F58699954F5AF6B6F6 /* Pods-superchargeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superchargeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-superchargeTests/Pods-superchargeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE1C26CEA8D7D4045C44B5C /* Pods-supercharge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supercharge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supercharge/Pods-supercharge.debug.xcconfig"; sourceTree = "<group>"; };
 		861D1C866B672247DD4229A3 /* Pods-superchargeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superchargeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-superchargeTests/Pods-superchargeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,17 +131,16 @@
 		1A7943C1225F77E10083EA0B /* supercharge */ = {
 			isa = PBXGroup;
 			children = (
-				1A7943EA225F7A2E0083EA0B /* Cells */,
 				1A7943E5225F7A2E0083EA0B /* Controllers */,
+				1A7943EE225F7A2E0083EA0B /* Views */,
+				1A7943EA225F7A2E0083EA0B /* Cells */,
 				1A7943E3225F7A2D0083EA0B /* Defines */,
 				1A7943E7225F7A2E0083EA0B /* Extensions */,
 				1A7943E2225F7A2D0083EA0B /* Manager */,
 				1A7943EB225F7A2E0083EA0B /* Models */,
 				1A7943EC225F7A2E0083EA0B /* Network */,
 				1A7943E6225F7A2E0083EA0B /* Storyboards */,
-				1A7943EE225F7A2E0083EA0B /* Views */,
 				1A7943C2225F77E10083EA0B /* AppDelegate.swift */,
-				1A7943C4225F77E10083EA0B /* ViewController.swift */,
 				1A7943C6225F77E10083EA0B /* Main.storyboard */,
 				1A7943C9225F77E30083EA0B /* Assets.xcassets */,
 				1A7943CB225F77E30083EA0B /* LaunchScreen.storyboard */,
@@ -163,6 +176,7 @@
 		1A7943E5225F7A2E0083EA0B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A7943FD225F83400083EA0B /* RepositoriesSearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +200,8 @@
 		1A7943EA225F7A2E0083EA0B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1A7943F9225F82FD0083EA0B /* RepositoryTableViewCell.swift */,
+				1A7943FA225F82FD0083EA0B /* RepositoryTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -193,6 +209,10 @@
 		1A7943EB225F7A2E0083EA0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A7943F3225F7CFA0083EA0B /* Repository.swift */,
+				1A7943F5225F7E060083EA0B /* User.swift */,
+				1A7943F7225F7FEE0083EA0B /* Licence.swift */,
+				1A794401225F8F710083EA0B /* RepositoryInterface.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +228,7 @@
 		1A7943EE225F7A2E0083EA0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A7943FF225F891E0083EA0B /* Loader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +320,7 @@
 				1A7943CD225F77E30083EA0B /* LaunchScreen.storyboard in Resources */,
 				1A7943CA225F77E30083EA0B /* Assets.xcassets in Resources */,
 				1A7943C8225F77E10083EA0B /* Main.storyboard in Resources */,
+				1A7943FC225F82FD0083EA0B /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +416,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7943F2225F7A2E0083EA0B /* NetworkManager.swift in Sources */,
-				1A7943C5225F77E10083EA0B /* ViewController.swift in Sources */,
+				1A794402225F8F710083EA0B /* RepositoryInterface.swift in Sources */,
+				1A7943F8225F7FEE0083EA0B /* Licence.swift in Sources */,
+				1A7943FB225F82FD0083EA0B /* RepositoryTableViewCell.swift in Sources */,
 				1A7943F1225F7A2E0083EA0B /* UIView+InstanceNib.swift in Sources */,
 				1A7943C3225F77E10083EA0B /* AppDelegate.swift in Sources */,
+				1A7943F6225F7E060083EA0B /* User.swift in Sources */,
+				1A7943F4225F7CFA0083EA0B /* Repository.swift in Sources */,
 				1A7943EF225F7A2E0083EA0B /* Network.swift in Sources */,
+				1A794400225F891E0083EA0B /* Loader.swift in Sources */,
 				1A7943F0225F7A2E0083EA0B /* NSObject+Extension.swift in Sources */,
+				1A7943FE225F83400083EA0B /* RepositoriesSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
